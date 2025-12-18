@@ -155,8 +155,10 @@
         
         // Инициализация TON Connect
         const connector = new TON_CONNECT_UI.TonConnect({
-            manifestUrl: window.location.origin + '/tonconnect-manifest.json'
+            manifestUrl: window.location.origin + '/counter-app/tonconnect-manifest.json'
         });
+
+        console.log(window.location.origin + '/counter-app/tonconnect-manifest.json');
         
         // Инициализация UI
         const ui = new TON_CONNECT_UI.TonConnectUI({
